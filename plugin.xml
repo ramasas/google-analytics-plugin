@@ -29,12 +29,12 @@
 	</platform>
 
 	<platform name="android">
-		<config-file target="res/xml/config.xml" parent="/*">
+		<config-file target="res/xml/config.xml" parent="/widget">
 			<feature name="UniversalAnalytics">
 		    	<param name="android-package" value="com.danielcwilson.plugins.analytics.UniversalAnalyticsPlugin" />
 		 	</feature>
 		</config-file>
-        <config-file target="AndroidManifest.xml" parent="/widget">
+        <config-file target="AndroidManifest.xml" parent="/manifest">
             <uses-permission android:name="android.permission.INTERNET" />
             <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
         </config-file>
